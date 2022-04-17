@@ -83,6 +83,14 @@
     z-index: 9999;
   }
 
+  .main_wrapper {
+    grid-gap: 32px;
+  }
+
+  .mini_wrapper {
+    grid-gap: 24px;
+  }
+
   .menu {
     display: grid;
     grid-template-columns: repeat(3, auto);
