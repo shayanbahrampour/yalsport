@@ -1,0 +1,9 @@
+.wrapper {
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 0;
+  }
+}
