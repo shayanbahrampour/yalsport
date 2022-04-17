@@ -72,10 +72,6 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    display: none;
-  }
-
   .responsive_header {
     display: block;
     position: fixed;
@@ -99,5 +95,12 @@
   .menu_item {
     padding: 8px;
     border-radius: 9999px;
+  }
+
+  .wrapper {
+    display: block;
+    bottom: 20px;
+    position: fixed;
+    z-index: 99;
   }
 }
