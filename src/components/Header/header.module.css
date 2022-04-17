@@ -88,7 +88,7 @@
   }
 
   .mini_wrapper {
-    grid-gap: 24px;
+    display: none;
   }
 
   .menu {
