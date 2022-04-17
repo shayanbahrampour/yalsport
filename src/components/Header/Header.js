@@ -24,7 +24,7 @@ const Header = () => {
       <div className={cn('container', styles.container)}>
         <div className={styles.main_wrapper}>
           <NavLink className={cn('body-2-bold', styles.logo)} to='/'>
-            Angel Uriostegui<span>.</span>
+            Uriostegui<span>.</span>
           </NavLink>
           <div className={styles.break} />
           <div className={styles.mini_wrapper}>
