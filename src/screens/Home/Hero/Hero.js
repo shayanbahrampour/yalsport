@@ -2,6 +2,8 @@ import cn from 'classnames';
 import styles from './hero.module.css';
 import { container, item } from '../../../variants/animations';
 import { motion } from 'framer-motion';
+import VideoModal from '../../../components/VideoModal';
+import { useState } from 'react';
 
 const socials = [
   {
@@ -63,6 +65,16 @@ const socials = [
 ];
 
 export default function Hero() {
+  const [modal, setModal] = useState(false);
+
+  const closeModal = () => {
+    setModal(false);
+  };
+
+  const openModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <motion.div variants={container} initial='hidden' animate='show'>
       <div className={cn('section', styles.section)}>
@@ -91,7 +103,32 @@ export default function Hero() {
           </div>
           <div className={styles.image_background}>
             <img className={styles.image} src='/avatar.jpg' />
+
+            <button
+              className={cn('button', styles.play_button)}
+              onClick={openModal}
+            >
+              <svg
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M8.99228 18.2901L9.36438 18.9413L8.99228 18.2901ZM16.9611 13.7365L16.589 13.0853L16.9611 13.7365ZM16.9611 10.2635L17.3333 9.61233L16.9611 10.2635ZM8.99228 5.70987L8.62017 6.36105L8.62017 6.36106L8.99228 5.70987ZM9.36438 18.9413L17.3333 14.3877L16.589 13.0853L8.62017 17.6389L9.36438 18.9413ZM17.3333 9.61233L9.36438 5.05869L8.62017 6.36106L16.589 10.9147L17.3333 9.61233ZM17.3333 14.3877C19.1807 13.332 19.1807 10.668 17.3333 9.61233L16.589 10.9147C17.4288 11.3946 17.4288 12.6054 16.589 13.0853L17.3333 14.3877ZM8.62017 17.6389C7.78685 18.1151 6.75 17.5134 6.75 16.5536H5.25C5.25 18.6652 7.53108 19.9889 9.36438 18.9413L8.62017 17.6389ZM9.36438 5.05869C7.53108 4.01109 5.25 5.33485 5.25 7.44636H6.75C6.75 6.48658 7.78685 5.88487 8.62017 6.36105L9.36438 5.05869ZM5.25 7.44636V16.5536H6.75V7.44636H5.25Z'
+                  fill='#28303F'
+                />
+              </svg>
+            </button>
           </div>
+          {modal ? (
+            <section className={cn('background')}>
+              <div className={cn('align')}>
+                <VideoModal closeModal={closeModal} setModal={setModal} />
+              </div>
+            </section>
+          ) : null}
         </div>
       </div>
     </motion.div>

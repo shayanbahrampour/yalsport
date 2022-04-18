@@ -119,8 +119,8 @@ const Header = () => {
       </div>
 
       {dropdown ? (
-        <section className={styles.background}>
-          <div className={styles.align}>
+        <section className={cn('background')}>
+          <div className={cn('align')}>
             <Menu
               openModal={openModal}
               closeModal={closeDropdown}
@@ -131,8 +131,8 @@ const Header = () => {
       ) : null}
 
       {modal ? (
-        <section className={styles.background}>
-          <div className={styles.align}>
+        <section className={cn('background')}>
+          <div className={cn('align')}>
             <Modal closeModal={closeModal} setModal={setModal} />
           </div>
         </section>
