@@ -112,4 +112,11 @@
   .responsive_button {
     display: block;
   }
+
+  .message_button {
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+  }
 }
