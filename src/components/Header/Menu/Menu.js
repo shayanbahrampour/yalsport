@@ -56,11 +56,6 @@ export default function Menu({ closeModal, setModal, modal }) {
           >
             Home V3
           </NavLink>
-          <div className={styles.wrapper}>
-            <NavLink className={cn('button button-stroke')} to=''>
-              Purchase $20
-            </NavLink>
-          </div>
         </ul>
       </div>
     </OutsideClickHandler>
