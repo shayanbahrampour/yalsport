@@ -90,7 +90,7 @@ const Header = () => {
           </button>
 
           <a
-            className={cn('button button-stroke')}
+            className={cn('button button-stroke', styles.purchase_button)}
             href='https://ui8.net'
             target='_blank'
           >

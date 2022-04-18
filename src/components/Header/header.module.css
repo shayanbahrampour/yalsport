@@ -113,6 +113,15 @@
     display: block;
   }
 
+  .logo {
+    font-size: 14px;
+    line-height: (24/14);
+  }
+
+  /* .purchase_button {
+    display: none;
+  } */
+
   .message_button {
     position: fixed;
     z-index: 99;
