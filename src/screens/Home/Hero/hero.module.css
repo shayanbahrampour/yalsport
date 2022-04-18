@@ -70,11 +70,6 @@
   margin-bottom: 24px;
 }
 
-.play_button svg {
-  width: 24px;
-  height: 24px;
-}
-
 @keyframes fade {
   0% {
     opacity: 0;
