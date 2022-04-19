@@ -4,19 +4,19 @@ import styles from './gallery.module.css';
 
 const gallery = [
   {
-    image: 'avatar.jpg',
+    image: 'images/01.jpg',
     title: 'By the sea',
     date: 'April 22, 2022',
   },
   {
-    image: 'avatar.jpg',
-    title: 'By the sea',
-    date: 'April 22, 2022',
+    image: 'images/02.jpg',
+    title: 'Black sand',
+    date: 'April 18, 2022',
   },
   {
-    image: 'avatar.jpg',
-    title: 'By the sea',
-    date: 'April 22, 2022',
+    image: 'images/03.jpg',
+    title: 'Plants',
+    date: 'April 10, 2022',
   },
 ];
 
