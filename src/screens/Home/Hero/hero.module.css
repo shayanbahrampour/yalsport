@@ -44,6 +44,14 @@
   border-radius: 50%;
 }
 
+.play_button svg {
+  fill: var(--n4);
+}
+
+.play_button:hover svg {
+  fill: var(--n8);
+}
+
 .image {
   border-radius: 50%;
   width: 100%;
