@@ -74,6 +74,15 @@
   margin-bottom: 24px;
 }
 
+.social_icon {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social_icon:hover {
+  transform: translateY(-4px);
+}
+
 @keyframes fade {
   0% {
     opacity: 0;

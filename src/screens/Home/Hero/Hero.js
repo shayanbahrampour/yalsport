@@ -82,7 +82,11 @@ export default function Hero() {
           <div className={styles.wrapper}>
             <div className={styles.social_wrapper}>
               {socials.map((item, index) => (
-                <motion.div variants={item} key={index}>
+                <motion.div
+                  variants={item}
+                  key={index}
+                  className={styles.social_icon}
+                >
                   {item.svg}
                 </motion.div>
               ))}
