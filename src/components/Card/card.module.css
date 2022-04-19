@@ -22,12 +22,8 @@
   border-radius: 8px;
 }
 
-.title {
-  margin-bottom: 8px;
-}
-
 @media (max-width: 768px) {
-  .image {
+  .image_container {
     height: 380px;
   }
 }
