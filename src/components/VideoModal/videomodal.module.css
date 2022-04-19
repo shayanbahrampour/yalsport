@@ -97,15 +97,18 @@
 }
 
 @media (max-width: 768px) {
+  .video {
+    width: 528px;
+  }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 474px) {
   .content {
     max-width: 400px;
   }
 
   .video {
-    width: 320px;
+    width: 100%;
     height: 380px;
   }
 
