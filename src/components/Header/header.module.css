@@ -63,6 +63,9 @@
 }
 
 @media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(1, auto);
+  }
   .responsive_header {
     display: block;
     position: fixed;
