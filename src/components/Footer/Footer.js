@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={cn('container', styles.container)}>
-        <p className={cn('caption')}>Copyright © 2022 Angel V.U.</p>
+        <p className={cn('caption')}>Copyright © 2022 Angel Uriostegui</p>
       </div>
     </footer>
   );
