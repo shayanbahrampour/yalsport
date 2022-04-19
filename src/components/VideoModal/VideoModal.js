@@ -31,7 +31,7 @@ export default function Modal({ closeModal, setModal, modal }) {
           className={styles.video}
           onLoad={spinner}
           loading='lazy'
-          src='https://www.youtube.com/embed/LVoPGlNvHhw'
+          src='https://www.youtube.com/embed/KCONWLnm7FQ'
           title='La Incondicional'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen={true}
