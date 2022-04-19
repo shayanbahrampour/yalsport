@@ -104,7 +104,8 @@ export default function Hero() {
           <div className={styles.image_background}>
             <img className={styles.image} src='/avatar.jpg' />
 
-            <button
+            <motion.button
+              variants={item}
               className={cn('button', styles.play_button)}
               onClick={openModal}
             >
@@ -120,7 +121,7 @@ export default function Hero() {
                   fill='#28303F'
                 />
               </svg>
-            </button>
+            </motion.button>
           </div>
           {modal ? (
             <section className={cn('background')}>

@@ -1,10 +1,11 @@
 import Hero from '../Home/Hero';
-import Builds from './Builds';
+import Gallery from './Gallery';
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <Gallery />
     </>
   );
 };
