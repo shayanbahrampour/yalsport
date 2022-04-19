@@ -4,3 +4,15 @@
   grid-gap: 32px;
   margin-top: 48px;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 474px) {
+  .wrapper {
+    grid-template-columns: repeat(1, auto);
+  }
+}
