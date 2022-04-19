@@ -86,7 +86,11 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .section {
+    padding-bottom: 0;
+  }
+
   .container {
     grid-template-columns: repeat(1, auto);
   }
