@@ -9,8 +9,8 @@ const Card = (props) => {
       </div>
 
       <div className={styles.content}>
-        <h3 className={cn('h3', styles.title)}>{props.title}</h3>
-        <p className={cn('caption', styles.subtitle)}>{props.date}</p>
+        <h3 className={cn('body-2-bold', styles.title)}>{props.title}</h3>
+        <p className={cn('caption')}>{props.date}</p>
       </div>
     </article>
   );
