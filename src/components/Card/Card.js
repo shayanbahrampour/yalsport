@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
 const variants = {
-  visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+  show: { opacity: 1, transition: { staggerChildren: 0.2 } },
   hidden: { opacity: 0 },
 };
 
@@ -15,7 +15,7 @@ const Card = (props) => {
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start('show');
     }
   }, [controls, inView]);
 
