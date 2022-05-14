@@ -278,21 +278,22 @@ export default function Gallery() {
   return (
     <motion.section className={styles.section}>
       <div className={cn('container', styles.container)}>
-        <div className={styles.nav}>
-          {gallery.map((item, index) => (
-            <button
-              className={cn(styles.button, {
-                [styles.active]: item.title === direction,
-              })}
-              onClick={() => setDirection(item.title)}
-              key={index}
-            >
-              {item.title}
-            </button>
-          ))}
+        <div className={styles.head}>
+          <div className={styles.nav}>
+            {gallery.map((item, index) => (
+              <button
+                className={cn(styles.button, {
+                  [styles.active]: item.title === direction,
+                })}
+                onClick={() => setDirection(item.title)}
+                key={index}
+              >
+                {item.title}
+              </button>
+            ))}
+          </div>
+          <Dropdown className={styles.dropdown} value={direction} />
         </div>
-
-        <Dropdown className={styles.dropdown} value={direction} />
 
         <div className={styles.wrapper}>
           {gallery
