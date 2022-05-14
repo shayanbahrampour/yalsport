@@ -1,7 +1,7 @@
 .section {
   right: 0;
   left: 0;
-  border-bottom: 1px solid var(--n3);
+  border-bottom: 1px solid var(--n7);
 }
 
 .container {
@@ -14,7 +14,7 @@
 .break {
   width: 1px;
   height: 48px;
-  background: var(--n3);
+  background: var(--n7);
 }
 
 .main_wrapper {
@@ -39,7 +39,7 @@
 }
 
 .logo {
-  color: var(--n8);
+  color: var(--n2);
   font-weight: bold;
 }
 

@@ -15,52 +15,52 @@
 
 .input {
   width: 100%;
-  color: var(--n8);
+  color: var(--n2);
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   padding: 18px;
-  border: 2px solid var(--n3);
+  border: 2px solid var(--n6);
   border-radius: 12px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background: var(--n1);
+  background: var(--n8);
 }
 
 .textarea {
   width: 100%;
-  color: var(--n8);
+  color: var(--n2);
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   padding: 18px;
-  border: 2px solid var(--n3);
+  border: 2px solid var(--n6);
   border-radius: 12px;
   outline: none;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background: var(--n1);
+  background: var(--n8);
 }
 
 .input::placeholder {
-  color: #697080;
+  color: var(--n4);
 }
 
 .input:hover {
-  border: 2px solid #23262f;
+  border: 2px solid var(--n2);
 }
 
 .input:active {
-  border: 2px solid #23262f;
+  border: 2px solid var(--n2);
 }
 
 .textarea::placeholder {
-  color: #697080;
+  color: var(--n4);
 }
 
 .textarea:hover {
-  border: 2px solid #23262f;
+  border: 2px solid var(--n2);
 }
 
 .textarea:active {
-  border: 2px solid #23262f;
+  border: 2px solid var(--n2);
 }
 
 @media (max-width: 768px) {

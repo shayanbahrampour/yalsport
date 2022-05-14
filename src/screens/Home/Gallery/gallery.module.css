@@ -1,3 +1,7 @@
+.section {
+  padding-top: 64px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +13,13 @@
   grid-template-columns: repeat(3, auto);
   grid-gap: 32px;
   margin-top: 48px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -12px -6px 0;
 }
 
 .button {
@@ -26,21 +37,33 @@
 }
 
 .button:hover {
-  color: var(--n8);
+  color: var(--n2);
 }
 
 .active {
-  background: var(--n8);
-  color: var(--n1);
+  background: var(--n2);
+  color: var(--n8);
 }
 
 .active:hover {
-  color: var(--n1);
+  color: var(--n8);
+}
+
+.dropdown {
+  display: none;
 }
 
 @media (max-width: 768px) {
   .wrapper {
     grid-template-columns: repeat(2, auto);
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .nav {
+    display: none;
   }
 }
 

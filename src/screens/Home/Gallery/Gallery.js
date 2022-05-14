@@ -4,6 +4,7 @@ import styles from './gallery.module.css';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import React, { useEffect, useState } from 'react';
+import Dropdown from '../../../components/Dropdown';
 
 const gallery = [
   {
@@ -275,19 +276,23 @@ export default function Gallery() {
   const [direction, setDirection] = useState(options[0]);
 
   return (
-    <motion.section className={cn('section section-pb')}>
+    <motion.section className={styles.section}>
       <div className={cn('container', styles.container)}>
-        {gallery.map((item, index) => (
-          <button
-            className={cn(styles.button, {
-              [styles.active]: item.title === direction,
-            })}
-            onClick={() => setDirection(item.title)}
-            key={index}
-          >
-            {item.title}
-          </button>
-        ))}
+        <div className={styles.nav}>
+          {gallery.map((item, index) => (
+            <button
+              className={cn(styles.button, {
+                [styles.active]: item.title === direction,
+              })}
+              onClick={() => setDirection(item.title)}
+              key={index}
+            >
+              {item.title}
+            </button>
+          ))}
+        </div>
+
+        <Dropdown className={styles.dropdown} value={direction} />
 
         <div className={styles.wrapper}>
           {gallery

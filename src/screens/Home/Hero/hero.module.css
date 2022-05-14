@@ -17,10 +17,10 @@
 .image_background {
   width: 455px;
   height: 455px;
-  background-color: var(--n1);
+  background-color: var(--n8);
   border-radius: 50%;
   padding: 40px;
-  border: 1px solid var(--n3);
+  border: 1px solid var(--n6);
   position: relative;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .play_button:hover svg {
-  fill: var(--n8);
+  fill: var(--n2);
 }
 
 .image {

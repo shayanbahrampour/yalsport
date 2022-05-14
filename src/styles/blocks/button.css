@@ -1,10 +1,10 @@
 [class~='button'] {
-  background-color: var(--n8);
+  background-color: var(--n2);
   padding: 16px 24px;
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
-  color: var(--n1);
+  color: var(--n8);
   border: none;
   border-radius: 9999px;
   cursor: pointer;
@@ -42,13 +42,13 @@
 }
 
 .button-small:hover {
-  color: var(--n8);
+  color: var(--n2);
   opacity: 1;
   background-color: transparent;
 }
 
 .active {
-  color: var(--n8);
+  color: var(--n2);
 }
 
 .button-svg {
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--n6);
+  background: var(--n2);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   outline: none;
 }
@@ -70,11 +70,11 @@
 
 .button-svg:hover svg,
 .button-svg:active svg {
-  fill: var(--n1);
+  fill: var(--n8);
 }
 
 .button-svg svg {
-  fill: var(--n1);
+  fill: var(--n8);
 }
 
 .svg-active {
@@ -82,7 +82,7 @@
 }
 
 .svg-active svg {
-  fill: var(--n1);
+  fill: var(--n8);
 }
 
 @media (max-width: 768px) {
