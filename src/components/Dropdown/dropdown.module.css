@@ -74,6 +74,7 @@
   opacity: 0;
   transform: translateY(3px);
   transition: all 0.2s;
+  padding: 12px;
 }
 
 .option {
@@ -83,6 +84,7 @@
   transition: color 0.2s;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 6px;
 }
 
 .option:hover {
@@ -90,5 +92,6 @@
 }
 
 .selectioned {
-  color: var(--p1);
+  color: var(--n8);
+  background: var(--p1);
 }
