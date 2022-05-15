@@ -292,7 +292,12 @@ export default function Gallery() {
               </button>
             ))}
           </div>
-          <Dropdown className={styles.dropdown} value={direction} />
+          <Dropdown
+            className={styles.dropdown}
+            value={direction}
+            options={options}
+            setValue={setDirection}
+          />
         </div>
 
         <div className={styles.wrapper}>
