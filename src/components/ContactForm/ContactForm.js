@@ -35,6 +35,7 @@ export default function ContactForm() {
               type='name'
               name='name'
               required
+              autoFocus
             />
           </motion.div>
 

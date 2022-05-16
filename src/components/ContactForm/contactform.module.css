@@ -51,6 +51,11 @@
   border: 2px solid var(--n2);
 }
 
+.input:focus {
+  color: var(--p1);
+  border: 2px solid var(--p1);
+}
+
 .textarea::placeholder {
   color: var(--n4);
 }
@@ -61,6 +66,11 @@
 
 .textarea:active {
   border: 2px solid var(--n2);
+}
+
+.textarea:focus {
+  color: var(--p1);
+  border: 2px solid var(--p1);
 }
 
 @media (max-width: 768px) {
