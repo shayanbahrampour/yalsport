@@ -74,7 +74,6 @@
   opacity: 0;
   transform: translateY(3px);
   transition: all 0.2s;
-  padding: 12px;
 }
 
 .option {
@@ -92,6 +91,5 @@
 }
 
 .selectioned {
-  color: var(--n8);
-  background: var(--p1);
+  color: var(--p1);
 }
