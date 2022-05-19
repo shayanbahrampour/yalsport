@@ -37,9 +37,11 @@ export default function Menu({ closeModal, setModal, modal }) {
               splitLocation[1] === '/' ? 'button-small active' : 'button-small'
             )}
             to='/'
+            onClick={closeModal}
           >
             Home V1
           </NavLink>
+
           <NavLink
             className={cn(
               splitLocation[1] === '/homev2'
@@ -47,6 +49,7 @@ export default function Menu({ closeModal, setModal, modal }) {
                 : 'button-small'
             )}
             to='/homev2'
+            onClick={closeModal}
           >
             Home V2
           </NavLink>
@@ -57,6 +60,7 @@ export default function Menu({ closeModal, setModal, modal }) {
                 : 'button-small'
             )}
             to='/homev3'
+            onClick={closeModal}
           >
             Home V3
           </NavLink>
