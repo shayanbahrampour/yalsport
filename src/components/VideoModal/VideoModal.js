@@ -3,7 +3,7 @@ import OutsideClickHandler from 'react-outside-click-handler';
 import { useState } from 'react';
 import cn from 'classnames';
 
-export default function Modal({ closeModal, setModal, modal }) {
+export default function Modal({ closeModal, setModal, modal, embed }) {
   const [videoLoading, setVideoLoading] = useState(true);
 
   const spinner = () => {
@@ -31,7 +31,7 @@ export default function Modal({ closeModal, setModal, modal }) {
           className={styles.video}
           onLoad={spinner}
           loading='lazy'
-          src='https://www.youtube.com/embed/KCONWLnm7FQ'
+          src={embed}
           title='La Incondicional'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen={true}

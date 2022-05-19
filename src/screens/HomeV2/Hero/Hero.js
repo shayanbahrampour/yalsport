@@ -127,7 +127,11 @@ const Hero = () => {
           {modal ? (
             <section className={cn('background')}>
               <div className={cn('align')}>
-                <VideoModal closeModal={closeModal} setModal={setModal} />
+                <VideoModal
+                  embed='https://www.youtube.com/embed/nTpqgeqaNa4'
+                  closeModal={closeModal}
+                  setModal={setModal}
+                />
               </div>
             </section>
           ) : null}
