@@ -41,9 +41,11 @@ const Header = () => {
           <div className={styles.mini_wrapper}>
             <NavLink
               className={cn(
-                splitLocation[1] === '' ? 'button-small active' : 'button-small'
+                splitLocation[1] === '/'
+                  ? 'button-small active'
+                  : 'button-small'
               )}
-              to=''
+              to='/'
             >
               Home V1
             </NavLink>

@@ -3,7 +3,7 @@ import './styles/app.css';
 import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
 import Home from './screens/Home';
 import Page from './components/Page';
-import Writings from './screens/Writings';
+import HomeV2 from './screens/HomeV2';
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
           }
         />
         <Route
-          path='/writings'
+          path='/homev2'
           element={
             <Page>
-              <Home />
+              <HomeV2 />
             </Page>
           }
         />

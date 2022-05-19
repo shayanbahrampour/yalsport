@@ -34,17 +34,19 @@ export default function Menu({ closeModal, setModal, modal }) {
         <ul className={styles.menu}>
           <NavLink
             className={cn(
-              splitLocation[1] === '' ? 'button-small active' : 'button-small'
+              splitLocation[1] === '/' ? 'button-small active' : 'button-small'
             )}
-            to=''
+            to='/'
           >
             Home V1
           </NavLink>
           <NavLink
             className={cn(
-              splitLocation[1] === '' ? 'button-small active' : 'button-small'
+              splitLocation[1] === '/homev2'
+                ? 'button-small active'
+                : 'button-small'
             )}
-            to='homev2'
+            to='/homev2'
           >
             Home V2
           </NavLink>
