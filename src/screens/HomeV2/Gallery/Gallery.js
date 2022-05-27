@@ -3,6 +3,7 @@ import cn from "classnames";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import CardII from "../../../components/CardII";
+import Dropdown from "../../../components/Dropdown";
 
 const gallery = [
   {
@@ -280,25 +281,33 @@ const Gallery = () => {
   return (
     <motion.section className={styles.section}>
       <div className={cn("container", styles.container)}>
-        <div className={styles.nav}>
-          {gallery.map((item, index) => (
-            <div
-              className={styles.tab}
-              onClick={() => setDirection(item.title)}
-            >
-              <div className={styles.image_container}>
-                <img src={item.image} className={styles.image} />
-              </div>
-              <button
-                className={cn(styles.button, {
-                  [styles.active]: item.title === direction,
-                })}
-                key={index}
+        <div className={styles.head}>
+          <div className={styles.nav}>
+            {gallery.map((item, index) => (
+              <div
+                className={styles.tab}
+                onClick={() => setDirection(item.title)}
               >
-                {item.title}
-              </button>
-            </div>
-          ))}
+                <div className={styles.image_container}>
+                  <img src={item.image} className={styles.image} />
+                </div>
+                <button
+                  className={cn(styles.button, {
+                    [styles.active]: item.title === direction,
+                  })}
+                  key={index}
+                >
+                  {item.title}
+                </button>
+              </div>
+            ))}
+          </div>
+          <Dropdown
+            className={styles.dropdown}
+            value={direction}
+            options={options}
+            setValue={setDirection}
+          />
         </div>
 
         <div className={styles.wrapper}>

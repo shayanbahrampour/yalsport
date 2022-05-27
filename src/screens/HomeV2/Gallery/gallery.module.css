@@ -2,12 +2,6 @@
   padding-top: 120px;
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -18,8 +12,14 @@
 }
 
 .nav {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -12px -6px 0;
+}
+
+.dropdown {
+  display: none;
 }
 
 .tab {
@@ -80,6 +80,10 @@
     padding-top: 0;
   }
 
+  .dropdown {
+    display: block;
+  }
+
   .wrapper {
     grid-template-columns: repeat(2, auto);
   }
@@ -87,6 +91,10 @@
   .image_container {
     width: 60px;
     height: 60px;
+  }
+
+  .nav {
+    display: none;
   }
 }
 
