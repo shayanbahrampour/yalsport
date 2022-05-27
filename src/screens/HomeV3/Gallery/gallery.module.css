@@ -1,0 +1,88 @@
+.section {
+  padding-top: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 32px;
+  margin-top: 48px;
+  padding-bottom: 48px;
+  position: relative;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -12px -6px 0;
+  background-color: var(--n7);
+  border-radius: 8px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.button {
+  align-self: center;
+  padding: 6px 12px;
+  margin: 8px 6px;
+  border-radius: 8px;
+  background: none;
+  color: var(--n4);
+  font-family: "Outfit", sans-serif;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: var(--n6);
+  color: var(--n2);
+}
+
+.active {
+  background: var(--n2);
+  color: var(--n8);
+}
+
+.active:hover {
+  color: var(--n8);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 0;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .image_container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 474px) {
+  .wrapper {
+    grid-template-columns: repeat(1, auto);
+  }
+}
