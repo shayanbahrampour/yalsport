@@ -78,6 +78,10 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding-top: 0;
+  }
+
   .wrapper {
     grid-template-columns: repeat(2, auto);
   }
