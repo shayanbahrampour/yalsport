@@ -278,19 +278,22 @@ const Gallery = () => {
     <motion.section className={styles.section}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <div className={styles.nav}>
-            {gallery.map((item, index) => (
-              <button
-                className={cn(styles.button, {
-                  [styles.active]: item.title === direction,
-                })}
-                onClick={() => setDirection(item.title)}
-                key={index}
-              >
-                {item.title}
-              </button>
-            ))}
+          <div className={styles.nav_background}>
+            <div className={styles.nav}>
+              {gallery.map((item, index) => (
+                <button
+                  className={cn(styles.button, {
+                    [styles.active]: item.title === direction,
+                  })}
+                  onClick={() => setDirection(item.title)}
+                  key={index}
+                >
+                  {item.title}
+                </button>
+              ))}
+            </div>
           </div>
+
           <Dropdown
             className={styles.dropdown}
             value={direction}
