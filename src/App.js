@@ -5,6 +5,7 @@ import Home from "./screens/Home";
 import Page from "./components/Page";
 import HomeV2 from "./screens/HomeV2";
 import HomeV3 from "./screens/HomeV3";
+import Preview from "./screens/Preview";
 
 function App() {
   return (
@@ -34,6 +35,17 @@ function App() {
             </Page>
           }
         />
+
+        <Route
+          path="/preview"
+          element={
+            <Page>
+              <Preview />
+            </Page>
+          }
+        />
+
+        <Route path="/photo/:id" component={Preview} />
       </Routes>
     </BrowserRouter>
   );
