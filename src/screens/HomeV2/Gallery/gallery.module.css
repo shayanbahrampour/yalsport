@@ -20,7 +20,6 @@
 .nav {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  margin: -12px -6px 0;
 }
 
 .tab {
