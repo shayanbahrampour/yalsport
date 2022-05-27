@@ -18,9 +18,8 @@
 }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   margin: -12px -6px 0;
 }
 
@@ -95,10 +94,5 @@
 @media (max-width: 474px) {
   .wrapper {
     grid-template-columns: repeat(1, auto);
-  }
-
-  .image_container {
-    width: 44px;
-    height: 44px;
   }
 }
