@@ -2,7 +2,7 @@ import styles from "./gallery.module.css";
 import cn from "classnames";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import CardII from "../../../components/CardII";
+import CardIII from "../../../components/CardIII";
 import Dropdown from "../../../components/Dropdown";
 
 const gallery = [
@@ -306,7 +306,7 @@ const Gallery = () => {
           {gallery
             .find((item) => item.title === direction)
             .galleries.map((item, index) => (
-              <CardII key={index} {...item} />
+              <CardIII key={index} {...item} />
             ))}
         </div>
       </div>
