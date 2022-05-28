@@ -1,7 +1,7 @@
 import styles from "./hero.module.css";
 import cn from "classnames";
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div className={cn("section", styles.section)}>
       <div className={cn("container", styles.container)}>
@@ -10,7 +10,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={cn("h2", styles.title)}>By the sea</h1>
+          <h1 className={cn("h2", styles.title)}>By the Sea</h1>
           <p className={cn("body", styles.subtitle)}>
             Molestiae aliquid magnam voluptatibus eum blanditiis eos doloremque.
             Repellendus dicta fuga est cumque soluta autem ut. Dolorem

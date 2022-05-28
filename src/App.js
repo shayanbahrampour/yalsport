@@ -7,6 +7,11 @@ import HomeV2 from "./screens/HomeV2";
 import HomeV3 from "./screens/HomeV3";
 import Preview from "./screens/Preview";
 
+const data = [
+  { id: 1, title: "First", content: "Hello world!" },
+  { id: 2, title: "Second", content: "Hello again!" },
+];
+
 function App() {
   return (
     <BrowserRouter>
@@ -45,7 +50,7 @@ function App() {
           }
         />
 
-        <Route path="/photo/:id" component={Preview} />
+        <Route path="/preview/:id" render={(props) => <Preview {...props} />} />
       </Routes>
     </BrowserRouter>
   );
