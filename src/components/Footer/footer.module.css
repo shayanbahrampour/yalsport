@@ -6,8 +6,24 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 32px;
+  margin-bottom: 24px;
+}
+
+.link {
+  color: var(--n4);
+}
+
+.link:hover {
+  color: var(--n2);
 }
 
 @media (max-width: 768px) {

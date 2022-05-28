@@ -6,11 +6,7 @@ import Page from "./components/Page";
 import HomeV2 from "./screens/HomeV2";
 import HomeV3 from "./screens/HomeV3";
 import Preview from "./screens/Preview";
-
-const data = [
-  { id: 1, title: "First", content: "Hello world!" },
-  { id: 2, title: "Second", content: "Hello again!" },
-];
+import Styleguide from "./screens/Styleguide";
 
 function App() {
   return (
@@ -47,6 +43,15 @@ function App() {
           element={
             <Page>
               <Preview />
+            </Page>
+          }
+        />
+
+        <Route
+          path="/styleguide"
+          element={
+            <Page>
+              <Styleguide />
             </Page>
           }
         />
