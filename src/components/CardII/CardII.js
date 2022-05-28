@@ -21,24 +21,24 @@ const CardII = (props) => {
   }, [controls, inView]);
 
   return (
-    <motion.article
-      variants={variants}
-      initial="hidden"
-      ref={ref}
-      animate={controls}
-      className={styles.container}
-    >
-      <Link to="/preview">
+    <Link to="/preview">
+      <motion.article
+        variants={variants}
+        initial="hidden"
+        ref={ref}
+        animate={controls}
+        className={styles.container}
+      >
         <div className={styles.image_container}>
           <img className={styles.image} src={props.image} />
         </div>
-      </Link>
 
-      <div className={styles.content}>
-        <h3 className={cn("body-2-bold", styles.title)}>{props.title}</h3>
-        <p className={cn("caption-2")}>{props.date}</p>
-      </div>
-    </motion.article>
+        <div className={styles.content}>
+          <h3 className={cn("body-2-bold", styles.title)}>{props.title}</h3>
+          <p className={cn("caption-2")}>{props.date}</p>
+        </div>
+      </motion.article>
+    </Link>
   );
 };
 
