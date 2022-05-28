@@ -42,6 +42,7 @@
 }
 
 .title {
+  color: var(--n2);
   margin-bottom: 8px;
 }
 
