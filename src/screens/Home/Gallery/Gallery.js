@@ -305,9 +305,7 @@ export default function Gallery() {
           {gallery
             .find((item) => item.title === direction)
             .galleries.map((item, index) => (
-              <Link key={index} to={`/photos/${index + 1}`}>
-                <Card {...item} />
-              </Link>
+              <Card {...item} />
             ))}
         </div>
       </div>

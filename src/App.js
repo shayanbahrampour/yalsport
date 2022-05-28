@@ -26,15 +26,6 @@ function App() {
         />
 
         <Route
-          path="photos/:photoId"
-          element={
-            <Page>
-              <Preview />
-            </Page>
-          }
-        />
-
-        <Route
           path="/homev2"
           element={
             <Page>

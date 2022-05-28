@@ -40,9 +40,11 @@ const Card = (props) => {
       animate={controls}
       className={styles.container}
     >
-      <div className={styles.image_container}>
-        <img className={styles.image} src={props.image} />
-      </div>
+      <Link to="/preview">
+        <div className={styles.image_container}>
+          <img className={styles.image} src={props.image} />
+        </div>
+      </Link>
 
       <div className={styles.content}>
         <h3 className={cn("body-2-bold", styles.title)}>{props.title}</h3>
