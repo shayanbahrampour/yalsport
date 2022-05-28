@@ -89,20 +89,46 @@ const sizes = [
   },
 ];
 
+const colors = [
+  { number: 1, color: "#2a85ff" },
+  { number: 2, color: "#83bf6e" },
+  { number: 3, color: "#ff6a55" },
+  { number: 4, color: "#8e59ff" },
+];
+
 const Hero = () => {
   return (
     <div className={cn("section")}>
       <div className={cn("container", styles.container)}>
-        <h4 className={cn("body-bold")}>Typography | Outfit</h4>
+        <div className={styles.sizes}>
+          <h4 className={cn("body-bold")}>Typography | Outfit</h4>
+          {sizes.map((item, index) => (
+            <div className={styles.wrapper}>
+              <h4 key={index} className={cn(item.className)}>
+                {item.name}
+              </h4>
+              <p className={cn("body-2")}>{item.size}</p>
+            </div>
+          ))}
+        </div>
+        <div className={styles.colors}>
+          <h4 className={cn("body-bold")}>Colors</h4>
 
-        {sizes.map((item, index) => (
-          <div className={styles.wrapper}>
-            <h4 key={index} className={cn(item.className)}>
-              {item.name}
-            </h4>
-            <p className={cn("body-2")}>{item.size}</p>
+          <div className={styles.content}>
+            <p className={cn("body-2-bold")}>Primary</p>
+            <div className={styles.colors_wrapper}>
+              {colors.map((item, index) => (
+                <div
+                  key={index}
+                  className={cn("body-2", styles.color)}
+                  style={{ background: item.color }}
+                >
+                  {item.number}
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

@@ -6,3 +6,30 @@
   grid-gap: 24px;
   margin-top: 32px;
 }
+
+.sizes {
+  margin-bottom: 60px;
+}
+
+.content {
+  margin-top: 24px;
+}
+
+.colors_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 16px;
+  margin-top: 24px;
+}
+
+.color {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--n8);
+}
