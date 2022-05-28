@@ -8,6 +8,7 @@ import HomeV3 from "./screens/HomeV3";
 import Preview from "./screens/Preview";
 import Styleguide from "./screens/Styleguide";
 import Licenses from "./screens/Licenses";
+import Changelog from "./screens/Changelog";
 
 function App() {
   return (
@@ -62,6 +63,15 @@ function App() {
           element={
             <Page>
               <Licenses />
+            </Page>
+          }
+        />
+
+        <Route
+          path="/changelog"
+          element={
+            <Page>
+              <Changelog />
             </Page>
           }
         />
