@@ -7,6 +7,7 @@ import HomeV2 from "./screens/HomeV2";
 import HomeV3 from "./screens/HomeV3";
 import Preview from "./screens/Preview";
 import Styleguide from "./screens/Styleguide";
+import Licenses from "./screens/Licenses";
 
 function App() {
   return (
@@ -52,6 +53,15 @@ function App() {
           element={
             <Page>
               <Styleguide />
+            </Page>
+          }
+        />
+
+        <Route
+          path="/licenses"
+          element={
+            <Page>
+              <Licenses />
             </Page>
           }
         />

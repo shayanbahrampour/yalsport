@@ -10,7 +10,7 @@ export default function Footer() {
           <Link to="/styleguide" className={cn("caption-bold", styles.link)}>
             Styleguide
           </Link>
-          <Link to="/styleguide" className={cn("caption-bold", styles.link)}>
+          <Link to="/licenses" className={cn("caption-bold", styles.link)}>
             Licenses
           </Link>
           <Link to="/styleguide" className={cn("caption-bold", styles.link)}>

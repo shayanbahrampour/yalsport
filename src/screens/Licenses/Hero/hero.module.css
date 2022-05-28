@@ -1,0 +1,35 @@
+.title {
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  max-width: 600px;
+}
+
+.list {
+  margin-top: 24px;
+  list-style: square;
+}
+
+.list_item {
+}
+
+.photos {
+  margin-top: 24px;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.photos_wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
