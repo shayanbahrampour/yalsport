@@ -1,9 +1,9 @@
 import Hero from "./Hero";
 
-const Preview = ({ props }) => {
+const Preview = () => {
   return (
     <>
-      <Hero {...props} />
+      <Hero />
     </>
   );
 };

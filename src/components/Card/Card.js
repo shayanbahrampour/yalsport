@@ -10,7 +10,17 @@ const variants = {
   hidden: { opacity: 0 },
 };
 
-const data = [""];
+const photos = [
+  {
+    name: `Param`,
+  },
+  {
+    name: `Vennila`,
+  },
+  {
+    name: `Afrin`,
+  },
+];
 
 const Card = (props) => {
   const controls = useAnimation();
@@ -23,24 +33,22 @@ const Card = (props) => {
   }, [controls, inView]);
 
   return (
-    <Link to="/preview">
-      <motion.article
-        variants={variants}
-        initial="hidden"
-        ref={ref}
-        animate={controls}
-        className={styles.container}
-      >
-        <div className={styles.image_container}>
-          <img className={styles.image} src={props.image} />
-        </div>
+    <motion.article
+      variants={variants}
+      initial="hidden"
+      ref={ref}
+      animate={controls}
+      className={styles.container}
+    >
+      <div className={styles.image_container}>
+        <img className={styles.image} src={props.image} />
+      </div>
 
-        <div className={styles.content}>
-          <h3 className={cn("body-2-bold", styles.title)}>{props.title}</h3>
-          <p className={cn("caption-2")}>{props.date}</p>
-        </div>
-      </motion.article>
-    </Link>
+      <div className={styles.content}>
+        <h3 className={cn("body-2-bold", styles.title)}>{props.title}</h3>
+        <p className={cn("caption-2")}>{props.date}</p>
+      </div>
+    </motion.article>
   );
 };
 

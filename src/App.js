@@ -24,6 +24,16 @@ function App() {
             </Page>
           }
         />
+
+        <Route
+          path="photos/:photoId"
+          element={
+            <Page>
+              <Preview />
+            </Page>
+          }
+        />
+
         <Route
           path="/homev2"
           element={
@@ -49,8 +59,6 @@ function App() {
             </Page>
           }
         />
-
-        <Route path="/preview/:id" render={(props) => <Preview {...props} />} />
       </Routes>
     </BrowserRouter>
   );

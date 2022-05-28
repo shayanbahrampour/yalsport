@@ -1,7 +1,11 @@
 import styles from "./hero.module.css";
 import cn from "classnames";
 
+import { useParams } from "react-router-dom";
+
 const Hero = (props) => {
+  const { photoId } = useParams();
+
   return (
     <div className={cn("section", styles.section)}>
       <div className={cn("container", styles.container)}>
@@ -10,7 +14,7 @@ const Hero = (props) => {
         </div>
 
         <div>
-          <h1 className={cn("h2", styles.title)}>By the Sea</h1>
+          <h1 className={cn("h2", styles.title)}>By the Sea {photoId}</h1>
           <p className={cn("body", styles.subtitle)}>
             Molestiae aliquid magnam voluptatibus eum blanditiis eos doloremque.
             Repellendus dicta fuga est cumque soluta autem ut. Dolorem
