@@ -3,6 +3,7 @@ import cn from "classnames";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const variants = {
   show: { opacity: 1, transition: { staggerChildren: 0.2 } },
@@ -27,9 +28,11 @@ const CardII = (props) => {
       animate={controls}
       className={styles.container}
     >
-      <div className={styles.image_container}>
-        <img className={styles.image} src={props.image} />
-      </div>
+      <Link to="/preview">
+        <div className={styles.image_container}>
+          <img className={styles.image} src={props.image} />
+        </div>
+      </Link>
 
       <div className={styles.content}>
         <h3 className={cn("body-2-bold", styles.title)}>{props.title}</h3>
