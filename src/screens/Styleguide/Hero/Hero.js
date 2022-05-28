@@ -89,11 +89,29 @@ const sizes = [
   },
 ];
 
-const colors = [
+const primaryColors = [
   { number: 1, color: "#2a85ff" },
   { number: 2, color: "#83bf6e" },
   { number: 3, color: "#ff6a55" },
   { number: 4, color: "#8e59ff" },
+];
+
+const secondaryColors = [
+  { number: 1, color: "#ffbc99" },
+  { number: 2, color: "#cabdff" },
+  { number: 3, color: "#b1e5fc" },
+  { number: 4, color: "#b5e4ca" },
+];
+
+const neutralColors = [
+  { id: "#141416", number: 1, color: "#ffffff" },
+  { number: 2, color: "#141416" },
+  { number: 3, color: "#23262f" },
+  { number: 4, color: "#353945" },
+  { number: 5, color: "#777e90" },
+  { number: 6, color: "#b1b5c3" },
+  { number: 7, color: "#e6e8ec" },
+  { number: 8, color: "#f4f5f6" },
 ];
 
 const Hero = () => {
@@ -117,7 +135,38 @@ const Hero = () => {
           <div className={styles.content}>
             <p className={cn("body-2-bold")}>Primary</p>
             <div className={styles.colors_wrapper}>
-              {colors.map((item, index) => (
+              {primaryColors.map((item, index) => (
+                <div
+                  key={index}
+                  className={cn("body-2", styles.color)}
+                  style={{ background: item.color }}
+                >
+                  {item.number}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.content}>
+            <p className={cn("body-2-bold")}>Secondary</p>
+            <div className={styles.colors_wrapper}>
+              {secondaryColors.map((item, index) => (
+                <div
+                  key={index}
+                  id={item.id}
+                  className={cn(`body-2 ${item.id}`, styles.color)}
+                  style={{ background: item.color }}
+                >
+                  {item.number}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.content}>
+            <p className={cn("body-2-bold")}>Neutrals</p>
+            <div className={styles.neutral_colors_wrapper}>
+              {neutralColors.map((item, index) => (
                 <div
                   key={index}
                   className={cn("body-2", styles.color)}

@@ -24,6 +24,15 @@
   margin-top: 24px;
 }
 
+.neutral_colors_wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 16px;
+  margin-top: 24px;
+}
+
 .color {
   width: 80px;
   height: 80px;
@@ -32,4 +41,8 @@
   align-items: center;
   justify-content: center;
   color: var(--n8);
+}
+
+.id {
+  color: #141416;
 }
