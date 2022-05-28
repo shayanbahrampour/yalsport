@@ -17,6 +17,76 @@ const sizes = [
     name: "Heading 2",
     size: "48/56",
   },
+  {
+    className: "h3",
+    name: "Heading 3",
+    size: "40/48",
+  },
+  {
+    className: "h4",
+    name: "Heading 4",
+    size: "32/40",
+  },
+  {
+    className: "body",
+    name: "Body",
+    size: "24/32",
+  },
+  {
+    className: "body-bold",
+    name: "Body Bold",
+    size: "24/32",
+  },
+  {
+    className: "body-2",
+    name: "Body 2",
+    size: "24/16",
+  },
+  {
+    className: "body-2-bold",
+    name: "Body 2 Bold",
+    size: "24/16",
+  },
+  {
+    className: "caption",
+    name: "Caption",
+    size: "14/24",
+  },
+  {
+    className: "caption-bold",
+    name: "Caption Bold",
+    size: "14/24",
+  },
+  {
+    className: "caption-2",
+    name: "Caption 2",
+    size: "12",
+  },
+  {
+    className: "caption-2-bold",
+    name: "Caption 2 Bold",
+    size: "12",
+  },
+  {
+    className: "hairline",
+    name: "Hairline ",
+    size: "16",
+  },
+  {
+    className: "hairline-2",
+    name: "Hairline 2",
+    size: "12",
+  },
+  {
+    className: "button-default",
+    name: "Button Default",
+    size: "16",
+  },
+  {
+    className: "button-2",
+    name: "Button 2",
+    size: "14",
+  },
 ];
 
 const Hero = () => {
