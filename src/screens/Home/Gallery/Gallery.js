@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const gallery = [
   {
-    title: "Life",
+    title: "Taban gallery",
     galleries: [
       {
         image: "images/01.jpg",
@@ -74,7 +74,7 @@ const gallery = [
     ],
   },
   {
-    title: "Videos",
+    title: "taban mehr",
     galleries: [
       {
         image: "images/16.jpg",
@@ -139,7 +139,7 @@ const gallery = [
     ],
   },
   {
-    title: "Projects",
+    title: "Pambe",
     galleries: [
       {
         image: "images/28.jpg",
@@ -198,71 +198,6 @@ const gallery = [
       },
       {
         image: "images/39.jpg",
-        title: "Dark Sea",
-        date: "April 02, 2022",
-      },
-    ],
-  },
-  {
-    title: "Travel",
-    galleries: [
-      {
-        image: "images/40.jpg",
-        title: "By the sea",
-        date: "April 22, 2022",
-      },
-      {
-        image: "images/41.jpg",
-        title: "Black sand",
-        date: "April 18, 2022",
-      },
-      {
-        image: "images/42.jpg",
-        title: "Plants",
-        date: "April 17, 2022",
-      },
-      {
-        image: "images/43.jpg",
-        title: "Sea",
-        date: "April 15, 2022",
-      },
-      {
-        image: "images/44.jpg",
-        title: "Spian",
-        date: "April 14, 2022",
-      },
-      {
-        image: "images/45.jpg",
-        title: "Interior",
-        date: "April 12, 2022",
-      },
-      {
-        image: "images/46.jpg",
-        title: "Triangle",
-        date: "April 10, 2022",
-      },
-      {
-        image: "images/47.jpg",
-        title: "Paint",
-        date: "April 09, 2022",
-      },
-      {
-        image: "images/48.jpg",
-        title: "Autumn",
-        date: "April 09, 2022",
-      },
-      {
-        image: "images/49.jpg",
-        title: "Squares",
-        date: "April 06, 2022",
-      },
-      {
-        image: "images/50.jpg",
-        title: "Mountains",
-        date: "April 03, 2022",
-      },
-      {
-        image: "images/51.jpg",
         title: "Dark Sea",
         date: "April 02, 2022",
       },

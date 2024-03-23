@@ -6,19 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={cn("container", styles.container)}>
-        <div className={styles.links}>
-          <Link to="/styleguide" className={cn("caption-bold", styles.link)}>
-            Styleguide
-          </Link>
-          <Link to="/licenses" className={cn("caption-bold", styles.link)}>
-            Licenses
-          </Link>
-          <Link to="/changelog" className={cn("caption-bold", styles.link)}>
-            Changelog
-          </Link>
-        </div>
-
-        <p className={cn("caption")}>Copyright © 2022 Angel Uriostegui</p>
+        <p className={cn("caption")}>Copyright © 2024 Salivan</p>
       </div>
     </footer>
   );
